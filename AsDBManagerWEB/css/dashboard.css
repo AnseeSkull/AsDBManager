@@ -304,13 +304,54 @@ body blockquote {
 }
 body a {
   color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
+  text-decoration:none;
 }
 body a:hover {
   color: #ffffff;
 }
 
-.nav-li{
-	display: inline-block;
-	margin-top: 1%;
+/*-------------------------------*/
+/*          nav         */
+/*-------------------------------*/
+.navbar-nav>li>input{
+	width: 90%;
+	
+}
+/*#dbip,#dbname,#dbpassword,#dbusername{
+	width: 90%;
+}*/
+.db-li{
+	width: 20%;
+	margin: 8px 0 8px 0;
+}
+.db-ul{
+	width: 50%;
+}
+.db-li-2{
+	width: 10%;
+	margin: 8px 0 8px 0;
+}
+.subfont{
+	color: #269ABC;
+	padding: 0% 0%;
+}
+
+@media(max-width: 768px) {
+	.db-li{
+		width: 100%;
+	}
+	.db-ul{
+		width: 100%;
+	}
+	.navbar-nav>li>input{
+		width: 100%;
+	}
+	nav .db-li-2{
+		display: inline-block;
+		width: 40%;
+	}
+	nav .db-li-2-r{
+		/*margin-left: 10px;*/
+		float: right;
+	}
 }
