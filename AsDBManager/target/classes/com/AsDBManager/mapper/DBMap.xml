@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.AsDBManager.dao.ConnectionDBDao">
+	<!-- 多行查询，使用sqlSession.selectList()执行 -->
+	<select id="findTable"  resultType="String">
+		show tables
+	</select>
+	<select id="findTableColumns"  parameterType="string" resultType="ResultSet">
+		show columns from ${table}
+	</select>
+</mapper>
